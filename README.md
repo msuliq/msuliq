@@ -30,7 +30,7 @@
 <br/>
 <details>
   <summary>
-    💻 New things, which I hope to have my hands on in the future: 
+    💻 New things, which I hope to master in the future: 
   </summary>
   <br/>
   <div>
@@ -63,19 +63,20 @@
   <summary>📈 My GitHub Stats: </summary>
   <br/>
   <div>
-     <img src="https://github-readme-stats.vercel.app/api?username=msuliq&count_private=true&show_icons=true&include_all_commits=true&theme=dark" alt="Suleyman's Github Stats" />
-     <br/>
-     <br/>
-     <div>
-        <div>
-          <img src="https://komarev.com/ghpvc/?username=msuliq&color=blue&label=Github Profile Views"/>
-           &nbsp;
-          <a href="https://github.com/msuliq">
-            <img src="https://img.shields.io/github/followers/msuliq.svg?style=social&label=Follow"/>
-          </a>
-        </div>
+    <img src="https://github-readme-stats.vercel.app/api?username=msuliq&count_private=true&show_icons=true&include_all_commits=true&theme=dark" alt="Suleyman's Github Stats" />
+    <br/>
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=msuliq&langs_count=10&theme=dark&layout=compact&" alt="Suleyman's most used languages"/>
+    <br/>
+    <div>
+      <div>
+        <img src="https://komarev.com/ghpvc/?username=msuliq&color=blue&label=Github Profile Views"/>
         &nbsp;
-        &nbsp;
-     </div>
+        <a href="https://github.com/msuliq">
+          <img src="https://img.shields.io/github/followers/msuliq.svg?style=social&label=Follow"/>
+        </a>
+      </div>
+      &nbsp;
+      &nbsp;
+    </div>
   </div>
 </details>
