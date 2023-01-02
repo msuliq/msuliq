@@ -2,9 +2,8 @@
 <br/>
 <details>
   <summary>
-    👨‍💻 I'm a software developer and programming enthusiast who enjoys challenging tasks and problem solving. To stay on the tip of my toes I am currently learning: 
+    👨‍💻 I'm a software developer and programming enthusiast who enjoys challenging tasks and problem solving. To stay on the tip of my toes I am currently learning:
   </summary>
-  <br/>
   <div>
     <img src="https://img.shields.io/badge/Ruby-CC342D?style=for-the-badge&logo=ruby&logoColor=white" />
     <img src="https://img.shields.io/badge/Ruby_on_Rails-CC0000?style=for-the-badge&logo=ruby-on-rails&logoColor=white" />
@@ -27,12 +26,10 @@
     <img src="https://img.shields.io/badge/VS%20Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white" />
   </div>
 </details>
-<br/>
 <details>
   <summary>
-    💻 New things, which I hope to master in the future: 
+    💻 New things, which I hope to master in the future:
   </summary>
-  <br/>
   <div>
     <img src="https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white" />
     <img src= "https://img.shields.io/badge/rust-%23000000.svg?style=for-the-badge&logo=rust&logoColor=white" />
@@ -48,20 +45,16 @@
     <img src="https://img.shields.io/badge/VIM-%2311AB00.svg?style=for-the-badge&logo=vim&logoColor=white" />
   </div>
 </details>
-<br/>
 <details>
   <summary>🌐 Additional links: </summary>
-  <br/>
   <div>
     <!-- target="_blank" does not work for GitHub's README.md -->
     <a href="https://msuliq.github.io/"><img src="https://img.shields.io/badge/Personal Site-100000?style=for-the-badge&logo=github&logoColor=white" /></a>
     <a href="https://stackoverflow.com/users/18576304/msuliq"><img src="https://img.shields.io/badge/-Stackoverflow-FE7A16?style=for-the-badge&logo=stack-overflow&logoColor=white" /></a>
   </div>
 </details>
-<br/>
 <details>
   <summary>📈 My GitHub Stats: </summary>
-  <br/>
   <div>
     <img src="https://github-readme-stats.vercel.app/api?username=msuliq&count_private=true&show_icons=true&include_all_commits=true&theme=dark" alt="Suleyman's Github Stats" />
     <br/>
