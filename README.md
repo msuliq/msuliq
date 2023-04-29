@@ -2,7 +2,7 @@
 <br/>
 <details>
   <summary>
-    👨‍💻 Self-taught software developer who enjoys challenging tasks and solving logical problems. I am proficient in following:
+    👨‍💻 Self-taught software developer who enjoys challenges related to logic, performance and complexity. My stack includes:
   </summary>
   <div>
     <img src="https://img.shields.io/badge/Ruby-CC342D?style=for-the-badge&logo=ruby&logoColor=white" />
@@ -27,7 +27,7 @@
 </details>
 <details>
   <summary>
-    💻 Things I would like to learn and work with in the future:
+    💻 In the near future I would like to learn and try:
   </summary>
   <div>
     <img src= "https://img.shields.io/badge/rust-%23000000.svg?style=for-the-badge&logo=rust&logoColor=white" />
