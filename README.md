@@ -53,7 +53,7 @@
 <details>
   <summary>📈 My GitHub stats: </summary>
   <div>
-    <img src="https://github-readme-stats.vercel.app/api?username=msuliq&count_private=true&show_icons=true&include_all_commits=true&theme=react" alt="Suleyman's Github Stats" />
+    <img src="https://github-readme-stats.vercel.app/api?username=msuliq&count_private=false&show_icons=true&include_all_commits=true&theme=react" alt="Suleyman's Github Stats" />
     <br/>
     <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=msuliq&langs_count=10&theme=dark&layout=compact&" alt="Suleyman's most used languages"/>
     <br/>
