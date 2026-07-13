@@ -4,40 +4,71 @@
 </div>
 -->
 
-# Hi, I'm Suleyman
+## Hi, I'm Suleyman
 
-I build fraud detection and abuse prevention systems. Sole architect of the authentication, identity, and anti-fraud platform
-at a top-10 certificate authority, where attackers probe the platform daily. I pair LLM-augmented detection with human-led
-forensics to take an attack from detection to mitigation in minutes, not days.
+I'm a senior backend and distributed-systems engineer who likes hard problems and ships them as production code.
+Right now I'm the sole architect of the authentication, identity, and certificate-issuance platform at a top-10
+certificate authority - designing the distributed services, scaling issuance through 10x growth, writing the
+cryptography and algorithms underneath, and, because attackers come with the territory, running the fraud and abuse
+defense too.
 
-Work I can talk about publicly:
+**What I do:**
 
-* Detected and shut down months-long attacker reconnaissance across authorization policies, invitation flows, password
-  enumeration, and role-hijacking paths - every probed vector closed in code before exploitation.
-* Bot and fake-account defense handling 1,000+ fake signups per day, including countermeasures against human
-  CAPTCHA-solving farms (reCAPTCHA v2/v3, Cloudflare Turnstile).
-* Insider-threat detection: staff and admin abuse, admins colluding with external attackers, attackers impersonating staff.
-* Identity-theft detection that cross-matches IP geolocation, billing, shipping, personal details, and phone numbers
-  across applications.
-* Killed an SMS pumping attack that was burning ~$2,500/day. Designed, built, and deployed the countermeasure in 4 days;
-  losses have stayed at $0 since.
-* Stopped a persistent session hijacking attacker who survived password resets, 2FA resets, and full endpoint forensics -
-  session binding, replay detection, and automatic termination of suspect sessions at the application layer.
-* Under the hood: device fingerprinting, behavioral analytics, IP intelligence, and velocity controls protecting
-  certificate issuance (TLS/SSL, code signing, identity) through 10x growth.
+* **Distributed systems & architecture** - extracted authentication into a standalone service with cross-service
+  sessions; built multi-perspective certificate validation (MPIC) with quorum across vantage points; designed the API
+  servers, async workers, and audit pipelines around them.
+* **Scale & performance** - scaled a backend through 10x growth in issuance; cut latency up to 5x by killing N+1s, a
+  hot-path regex, and a write storm, and by reworking batch jobs into per-record fan-out.
+* **Algorithms & cryptography** - PKI and X.509, memory-hard password hashing, and post-quantum signatures
+  (ML-DSA / FIPS 204); 14 gems published to RubyGems (~50k+ downloads).
+* **Correctness in money & state** - idempotent billing, atomic multi-step writes, and APIs that stay
+  backward-compatible as they grow.
+* **Auth & identity** - OAuth2, OpenID Connect, SAML/SSO, and session architecture, as the provider, not just the client.
+* **Fraud, security & abuse** - detection and defense at a CA where attackers probe daily (a few examples below).
+
+**A few security wins I can talk about publicly:**
+
+* Shut down months-long attacker reconnaissance across authorization, invitation, password-enumeration, and
+  role-hijacking paths - every probed vector closed in code before exploitation.
+* Bot and fake-account defense at 1,000+ fake signups/day, including countermeasures against human CAPTCHA-solving farms.
+* Killed an SMS pumping attack burning ~$2,500/day - built and deployed the fix in 4 days; losses $0 since.
+* Stopped a persistent session-hijacking attacker who survived password resets, 2FA resets, and full endpoint forensics.
 
 ## Open source
 
-* [omniauth_oidc](https://github.com/msuliq/omniauth_oidc) - OmniAuth strategy for OpenID Connect, first-class Microsoft Entra ID support
+Fourteen published gems (~50k+ RubyGems downloads), across the areas I work in.
+
+**Security, PKI & certificates**
+
+* [domain_sanity](https://github.com/msuliq/domain_sanity) - strict domain-name validation the way a CA must do it: RFC 1035, IDN/punycode, Public Suffix List, CA/Browser Forum wildcard rules, IP and reserved-range detection
+* [csr_peek](https://github.com/msuliq/csr_peek) - safe CSR and X.509 certificate inspection: SANs, key strength, weak-signature checks, and a pluggable Baseline Requirements policy, no runtime dependencies
+* [svg_sentinel](https://github.com/msuliq/svg_sentinel) - lint or sanitize untrusted SVG: blocks scripts, event handlers, XXE, and external references, with a CLI and SARIF output for CI
 * [ip_geo_lookup](https://github.com/msuliq/ip_geo_lookup) - zero-dependency IP geolocation for fraud scoring and access control
-* [balloon_hashing](https://github.com/msuliq/balloon_hashing) - pure Ruby implementation of the Balloon memory-hard hashing algorithm
+
+**Authentication & identity**
+
+* [omniauth_oidc](https://github.com/msuliq/omniauth_oidc) - OmniAuth strategy for OpenID Connect, first-class Microsoft Entra ID support
+* [openid_config_parser](https://github.com/msuliq/openid_config_parser) - fetch and parse OpenID Connect discovery configuration from any issuer endpoint
+* [oidc](https://github.com/msuliq/oidc) - OpenID Connect server and client library
+
+**Cryptography & post-quantum**
+
+* [ml_dsa](https://github.com/msuliq/ml_dsa) - Ruby C extension wrapping ML-DSA (FIPS 204), the post-quantum digital signature standard
+* [pqc_asn1](https://github.com/msuliq/pqc_asn1) - minimal ASN.1/DER/PEM/Base64 codec for post-quantum key serialization
+* [balloon_hashing](https://github.com/msuliq/balloon_hashing) - pure Ruby Balloon memory-hard hashing (SHA-256, SHA-512, BLAKE2b)
 * [yescrypt](https://github.com/msuliq/yescrypt) - Ruby C extension wrapping the yescrypt password hashing algorithm
+
+**Ruby & Rails utilities**
+
+* [pg_search_multiple_highlight](https://github.com/msuliq/pg_search_multiple_highlight) - extends pg_search to highlight matches across multiple columns
+* [delayed_crud](https://github.com/msuliq/delayed_crud) - delayed_create, delayed_update, and delayed_destroy helpers for Rails
+* [distributed_merge](https://github.com/msuliq/distributed_merge) - extends Array with a distributed_merge for two-dimensional arrays
 
 ## Writing
 
 * [How to Stop SMS Pump Fraud From Draining Your Wallet (and Sanity)](https://medium.com/@msuliq/how-to-stop-sms-pump-fraud-from-draining-your-wallet-and-sanity-11ea5435608d)
 * [Authenticating with OmniAuth and OpenID Connect (OIDC) in Rails](https://msuliq.medium.com/authenticating-with-omniauth-and-openid-connect-oidc-in-ruby-on-rails-applications-e136ec5b48c0)
 
-Ruby/Rails, Python, C, SQL. Before engineering: quantitative trading, risk modeling and fraud modeling are the same discipline with different labels.
+Ruby/Rails, Python, C/C++, SQL. Before engineering: quantitative trading - risk modeling turned out to be good training for distributed systems and for fraud alike.
 
-Open to senior fraud/abuse and security engineering roles, and solutions engineering at security vendors. US-remote (UTC+5, comfortable with US overlap).
+Open to senior/staff roles in backend, distributed systems, platform, and security engineering. US-remote (UTC+5, comfortable with US overlap).
