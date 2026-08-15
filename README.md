@@ -66,6 +66,10 @@ Fourteen published gems (~50k+ RubyGems downloads), across the areas I work in.
 
 ## Writing
 
+* [How I Parse Domain Names For a Certificate Authority](https://msuliq.medium.com/how-i-parse-domain-names-for-a-certificate-authority-92a940f32bea) - RFC label rules, IDN/punycode, the Public Suffix List, and the edge cases that break naive checks (companion to `domain_sanity`)
+* [We Reset the Password. We Reset 2FA. The Attacker Came Back in Seconds.](https://msuliq.medium.com/we-reset-the-password-we-reset-2fa-the-attacker-came-back-in-seconds-17575ad55246) - a session hijacking war story and the application-layer defense that ended it
+* [A Secret You Cannot See Is Safer: Building a Secure Memory Buffer in C](https://msuliq.medium.com/a-secret-you-cannot-see-is-safer-building-a-secure-memory-buffer-in-c-876839dd6a66) - keeping private keys off swap and out of core dumps (companion to `libpqcsb`)
+* [Trust, but Instrument: The Insider Threat Playbook](https://msuliq.medium.com/trust-but-instrument-the-insider-threat-playbook-c134742b7de0) - a news-anchored playbook for catching insider threats
 * [How to Stop SMS Pump Fraud From Draining Your Wallet (and Sanity)](https://medium.com/@msuliq/how-to-stop-sms-pump-fraud-from-draining-your-wallet-and-sanity-11ea5435608d)
 * [Authenticating with OmniAuth and OpenID Connect (OIDC) in Rails](https://msuliq.medium.com/authenticating-with-omniauth-and-openid-connect-oidc-in-ruby-on-rails-applications-e136ec5b48c0)
 
