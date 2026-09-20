@@ -6,10 +6,10 @@
 
 ## Hi, I'm Suleyman
 
-I'm a senior backend and distributed-systems engineer who likes hard problems and ships them as production code.
-Right now I'm the sole architect of the authentication, identity, and certificate-issuance platform at a top-10
-certificate authority - designing the distributed services, scaling issuance through 10x growth, writing the
-cryptography and algorithms underneath, and, because attackers come with the territory, running the fraud and abuse
+I'm a senior backend and distributed systems engineer.
+Right now I'm the architect of the authentication, identity, and certificate management platform at a top-10
+certificate authority, designing the distributed services, scaling issuance through 10x growth, writing the
+cryptography and algorithms underneath, and, because attackers come with the territory, running the bot, fraud and abuse
 defense too.
 
 **What I do:**
@@ -28,11 +28,14 @@ defense too.
 
 **A few security wins I can talk about publicly:**
 
-* Shut down months-long attacker reconnaissance across authorization, invitation, password-enumeration, and
-  role-hijacking paths - every probed vector closed in code before exploitation.
+* Shut down months-long attacker reconnaissance across authorization and account flows - every probed vector
+  closed in code before exploitation.
+* Closed a series of account-security flaws before exploitation: an account-takeover path in the account-recovery
+  flow, a second-factor bypass in the authentication flow, and abuse of the invitation system used to push
+  offensive content to recipients.
 * Bot and fake-account defense at 1,000+ fake signups/day, including countermeasures against human CAPTCHA-solving farms.
-* Killed an SMS pumping attack burning ~$2,500/day - built and deployed the fix in 4 days; losses $0 since.
-* Stopped a persistent session-hijacking attacker who survived password resets, 2FA resets, and full endpoint forensics.
+* Killed a four-figure-per-day SMS pumping attack - built and deployed the fix in 4 days; losses $0 since.
+* Stopped a persistent session-hijacking attacker who survived conventional account recovery and endpoint remediation.
 
 ## Open source
 
@@ -73,6 +76,6 @@ Fourteen published gems (~50k+ RubyGems downloads), across the areas I work in.
 * [How to Stop SMS Pump Fraud From Draining Your Wallet (and Sanity)](https://medium.com/@msuliq/how-to-stop-sms-pump-fraud-from-draining-your-wallet-and-sanity-11ea5435608d)
 * [Authenticating with OmniAuth and OpenID Connect (OIDC) in Rails](https://msuliq.medium.com/authenticating-with-omniauth-and-openid-connect-oidc-in-ruby-on-rails-applications-e136ec5b48c0)
 
-Ruby/Rails, Python, C/C++, SQL. Before engineering: quantitative trading - risk modeling turned out to be good training for distributed systems and for fraud alike.
+Ruby/Rails, Python, C/C++, SQL. Before engineering: quantitative trading, risk modeling turned out to be good training for distributed systems and for fraud alike.
 
 Open to senior/staff roles in backend, distributed systems, platform, and security engineering. US-remote (UTC+5, comfortable with US overlap).
