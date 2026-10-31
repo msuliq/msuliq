@@ -1,14 +1,13 @@
-## Hi, I'm Suleyman
+### Hi, I'm Suleyman
 
-I'm a Senior Staff Engineer at a top-10 global certificate authority. I'm the sole architect of its authentication, identity, and certificate issuance platform, and I scaled the core business 10x.
-
-**What I work on**
+**What I do**
 
 * Distributed systems, performance, and scale
 * Authentication: OAuth, OpenID Connect, SAML, SSO, passkeys, and 2FA
 * Cryptography and PKI, including post-quantum signatures
 * Fraud, bot, and abuse defense, from reCAPTCHA and Turnstile to custom detection
-* Integrations, internal tools, and AI workflows like MCP servers and Claude plugins
+* Integrations and internal tools
+* In-house language models for security, privacy, and compliance: fine-tuning, debugging, and integration
 
 **Open source**
 
@@ -22,7 +21,7 @@ I'm a Senior Staff Engineer at a top-10 global certificate authority. I'm the so
 * [yescrypt](https://github.com/msuliq/yescrypt) and [balloon_hashing](https://github.com/msuliq/balloon_hashing) - memory-hard password hashing
 * [ip_geo_lookup](https://github.com/msuliq/ip_geo_lookup) - IP geolocation for fraud checks
 
-I also write about this work on [Medium](https://msuliq.medium.com).
+I also write about work on [Medium](https://msuliq.medium.com).
 
 **Work with me**
 
